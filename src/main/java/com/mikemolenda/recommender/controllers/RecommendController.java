@@ -46,7 +46,7 @@ public class RecommendController extends HttpServlet {
         String url;
 
         int numRec =
-                (request.getParameter("numRec") == null ? 10 : Integer.parseInt(request.getParameter("numRec"));
+                (request.getParameter("numRec") == null ? 10 : Integer.parseInt(request.getParameter("numRec")));
 
         try {
 
