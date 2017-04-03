@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="derby">
+  <database-model serializer="dbm" rdbms="DERBY" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="APP">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="PREFERENCES">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="1" name="SQLJ"/>
+    <schema id="6" parent="1" name="SYS"/>
+    <schema id="7" parent="1" name="SYSCAT"/>
+    <schema id="8" parent="1" name="SYSCS_DIAG"/>
+    <schema id="9" parent="1" name="SYSCS_UTIL"/>
+    <schema id="10" parent="1" name="SYSFUN"/>
+    <schema id="11" parent="1" name="SYSIBM"/>
+    <schema id="12" parent="1" name="SYSPROC"/>
+    <schema id="13" parent="1" name="SYSSTAT"/>
+    <table id="14" parent="4" name="TASTE_PREFERENCES"/>
+    <column id="15" parent="14" name="USER_ID">
+      <Position>1</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="14" name="ITEM_ID">
+      <Position>2</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="14" name="PREFERENCE">
+      <Position>3</Position>
+      <DataType>DOUBLE(52)|8</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="14" name="timestamp">
+      <Position>4</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+    </column>
+    <index id="19" parent="14" name="USER_ID_IDX">
+      <ColNames>USER_ID</ColNames>
+    </index>
+    <index id="20" parent="14" name="ITEM_ID_IDX">
+      <ColNames>ITEM_ID</ColNames>
+    </index>
+    <key id="21" parent="14" name="SQL170403122502670">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID
+ITEM_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
