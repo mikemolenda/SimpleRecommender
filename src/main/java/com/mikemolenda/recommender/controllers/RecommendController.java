@@ -28,10 +28,10 @@ import java.util.List;
 public class RecommendController extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    private @Resource ( name = "jdbc/taste",
-                        lookup = "jdbc/taste",
-                        authenticationType = Resource.AuthenticationType.APPLICATION,
-                        shareable = false) DataSource tasteDS;
+    private @Resource (name="jdbc/taste",
+                        lookup="jdbc/taste",
+                        authenticationType=Resource.AuthenticationType.APPLICATION,
+                        shareable=false) DataSource tasteDS;
 
     public RecommendController() {
         super();
